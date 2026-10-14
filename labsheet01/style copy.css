@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    background-color: rgb(14, 204, 109);
+}
+h1 {
+    text-align: center;
+    color: dark rgb(20, 173, 27);
+
+}
+form{
+    background color: white;
+    padding: 20px;
+    widht:350px;
+    margin:auto;
+ 
+}
+label{
+    display:block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="password"],
+select,
+textarea{
+    width:100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+textarea{
+    height: 80px;
+}
+button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: darkblue;
+}
