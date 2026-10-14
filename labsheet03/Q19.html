@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Operations</title>
+</head>
+<body>
+
+<h2>Array Operations</h2>
+
+<button id="show">Show Array</button>
+<button id="sort">Sort</button>
+<button id="reverse">Reverse</button>
+
+<p id="result"></p>
+
+<script>
+    let numbers = [40, 10, 30, 20, 50];
+
+    document.getElementById("show").addEventListener("click", function() {
+        document.getElementById("result").textContent =
+            "Array: " + numbers.join(", ");
+    });
+
+    document.getElementById("sort").addEventListener("click", function() {
+        numbers.sort(function(a, b) {
+            return a - b;
+        });
+
+        document.getElementById("result").textContent =
+            "Sorted Array: " + numbers.join(", ");
+    });
+
+    document.getElementById("reverse").addEventListener("click", function() {
+        numbers.reverse();
+
+        document.getElementById("result").textContent =
+            "Reversed Array: " + numbers.join(", ");
+    });
+</script>
+
+</body>
+</html>
+

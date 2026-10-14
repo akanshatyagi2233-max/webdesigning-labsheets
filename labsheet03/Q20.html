@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Storage</title>
+</head>
+<body>
+
+<h2>Save Name</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+<button id="save">Save</button>
+<button id="load">Load</button>
+<button id="remove">Remove</button>
+
+<p id="result"></p>
+
+<script>
+    // Save data
+    document.getElementById("save").addEventListener("click", function() {
+        let name = document.getElementById("name").value;
+
+        localStorage.setItem("studentName", name);
+        document.getElementById("result").textContent =
+            "Name saved successfully!";
+    });
+
+    // Load data
+    document.getElementById("load").addEventListener("click", function() {
+        let name = localStorage.getItem("studentName");
+
+        document.getElementById("result").textContent =
+            "Saved Name: " + name;
+    });
+
+    // Remove data
+    document.getElementById("remove").addEventListener("click", function() {
+        localStorage.removeItem("studentName");
+
+        document.getElementById("result").textContent =
+            "Name removed!";
+    });
+</script>
+
+</body>
+</html>
+

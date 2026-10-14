@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Hide Element</title>
+</head>
+<body>
+
+<h2>Show / Hide Example</h2>
+
+<p id="text">This is a paragraph that can be hidden.</p>
+
+<button id="hideBtn">Hide</button>
+<button id="showBtn">Show</button>
+
+<script>
+    let text = document.getElementById("text");
+
+    document.getElementById("hideBtn").addEventListener("click", function() {
+        text.style.display = "none";
+    });
+
+    document.getElementById("showBtn").addEventListener("click", function() {
+        text.style.display = "block";
+    });
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Image</title>
+</head>
+<body>
+
+<h2>Image Changer</h2>
+
+<img id="myImage"
+     src="https://via.placeholder.com/200"
+     width="200">
+
+<br><br>
+
+<button id="changeBtn">Change Image</button>
+
+<script>
+    document.getElementById("changeBtn").addEventListener("click", function() {
+
+        document.getElementById("myImage").src =
+            "https://via.placeholder.com/200/ff0000/ffffff?text=New+Image";
+
+    });
+</script>
+
+</body>
+</html>
+

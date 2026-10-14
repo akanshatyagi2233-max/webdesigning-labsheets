@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Object</title>
+</head>
+<body>
+
+<h2>Student Details</h2>
+<div id="output"></div>
+
+<script>
+    // Creating a custom Student object
+    const student = {
+        name: "Rahul",
+        rollNo: 101,
+        course: "BCA",
+        marks: 85,
+
+        // Method to display student details
+        displayDetails: function() {
+            return `
+                Name: ${this.name}<br>
+                Roll No: ${this.rollNo}<br>
+                Course: ${this.course}<br>
+                Marks: ${this.marks}<br>
+            `;
+        },
+
+        // Method to check result
+        getResult: function() {
+            if (this.marks >= 40) {
+                return "Result: Pass";
+            } else {
+                return "Result: Fail";
+            }
+        }
+    };
+
+    // Displaying details
+    document.getElementById("output").innerHTML =
+        student.displayDetails() + "<br>" + student.getResult();
+</script>
+
+</body>
+</html>
+

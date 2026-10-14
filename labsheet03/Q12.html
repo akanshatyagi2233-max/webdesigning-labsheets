@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form id="myForm">
+
+    Name:
+    <input type="text" id="name">
+    <br><br>
+
+    Email:
+    <input type="email" id="email">
+    <br><br>
+
+    Age:
+    <input type="number" id="age">
+    <br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="message"></p>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let age = document.getElementById("age").value;
+        let message = document.getElementById("message");
+
+        if (name === "" || email === "" || age === "") {
+            event.preventDefault();
+            message.textContent = "Please fill all fields.";
+            message.style.color = "red";
+        }
+        else if (age < 18) {
+            event.preventDefault();
+            message.textContent = "Age must be 18 or above.";
+            message.style.color = "red";
+        }
+        else {
+            message.textContent = "Form submitted successfully!";
+            message.style.color = "green";
+        }
+    });
+</script>
+
+</body>
+</html>
+

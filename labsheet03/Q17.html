@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text and Style</title>
+</head>
+<body>
+
+<h2 id="heading">Hello Student</h2>
+
+<button id="changeBtn">Change</button>
+
+<script>
+    document.getElementById("changeBtn").addEventListener("click", function() {
+
+        let heading = document.getElementById("heading");
+
+        heading.textContent = "Welcome to JavaScript!";
+        heading.style.color = "blue";
+        heading.style.backgroundColor = "yellow";
+        heading.style.fontSize = "30px";
+    });
+</script>
+
+</body>
+</html>
+

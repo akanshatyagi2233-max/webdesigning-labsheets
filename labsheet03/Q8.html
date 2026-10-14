@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+
+<h2>Interactive Calculator</h2>
+
+<input type="number" id="num1" placeholder="Enter first number">
+<input type="number" id="num2" placeholder="Enter second number">
+
+<br><br>
+
+<button id="add">Addition</button>
+<button id="sub">Subtraction</button>
+<button id="mul">Multiplication</button>
+<button id="div">Division</button>
+
+<h3 id="result">Result: </h3>
+
+<script>
+    // Addition
+    document.getElementById("add").addEventListener("click", function() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        document.getElementById("result").innerHTML =
+            "Result: " + (a + b);
+    });
+
+    // Subtraction
+    document.getElementById("sub").addEventListener("click", function() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        document.getElementById("result").innerHTML =
+            "Result: " + (a - b);
+    });
+
+    // Multiplication
+    document.getElementById("mul").addEventListener("click", function() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        document.getElementById("result").innerHTML =
+            "Result: " + (a * b);
+    });
+
+    // Division
+    document.getElementById("div").addEventListener("click", function() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+
+        if (b === 0) {
+            document.getElementById("result").innerHTML =
+                "Cannot divide by zero";
+        } else {
+            document.getElementById("result").innerHTML =
+                "Result: " + (a / b);
+        }
+    });
+</script>
+
+</body>
+</html>
+

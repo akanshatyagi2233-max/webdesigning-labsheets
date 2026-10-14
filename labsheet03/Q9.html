@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic DOM Elements</title>
+</head>
+<body>
+
+<h2>Add Items Dynamically</h2>
+
+<input type="text" id="textInput" placeholder="Enter text">
+<button id="addBtn">Add</button>
+
+<ul id="list"></ul>
+
+<script>
+    document.getElementById("addBtn").addEventListener("click", function() {
+
+        let text = document.getElementById("textInput").value;
+
+        if (text.trim() !== "") {
+
+            // Create a new <li> element
+            let newItem = document.createElement("li");
+
+            // Add user text to the element
+            newItem.textContent = text;
+
+            // Append the new element to the list
+            document.getElementById("list").appendChild(newItem);
+
+            // Clear input box
+            document.getElementById("textInput").value = "";
+        }
+    });
+</script>
+
+</body>
+</html>
+

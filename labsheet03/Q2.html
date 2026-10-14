@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime or Composite</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Prime or Composite Checker</h2>
+
+    <input type="number" id="number" placeholder="Enter a number">
+
+    <button onclick="checkNumber()">Check</button>
+
+    <div id="result"></div>
+
+
+    <script>
+
+        function checkNumber() {
+
+            // Get number from input
+            let num = Number(document.getElementById("number").value);
+
+            let result = document.getElementById("result");
+
+            // Check for invalid numbers
+            if (num <= 1) {
+                result.innerHTML = "Please enter a number greater than 1.";
+                return;
+            }
+
+            let isPrime = true;
+
+            // Check divisibility
+            for (let i = 2; i < num; i++) {
+
+                if (num % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            // Display result
+            if (isPrime) {
+                result.innerHTML = num + " is a Prime Number.";
+            } else {
+                result.innerHTML = num + " is a Composite Number.";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
