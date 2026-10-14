@@ -1,0 +1,26 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid blue;
+    background: #eaf4ff;
+    outline: none;
+}
+
+button {
+    padding: 10px 25px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #eef2ff;
+        }
+
+        .newsletter {
+            width: 450px;
+            margin: 80px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .newsletter h2 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .newsletter p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Input container */
+        .input-box {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 15px 12px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+        }
+
+        /* Floating label */
+        .input-box label {
+            position: absolute;
+            left: 12px;
+            top: 15px;
+            color: #888;
+            background: white;
+            padding: 0 5px;
+            pointer-events: none;
+            transition: 0.3s ease;
+        }
+
+        /* Move label when input is focused */
+        .input-box input:focus + label,
+        .input-box input:not(:placeholder-shown) + label {
+            top: -10px;
+            font-size: 13px;
+            color: #2563eb;
+        }
+
+        .input-box input:focus {
+            border-color: #2563eb;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="newsletter">
+
+        <h2>Subscribe to Our Newsletter</h2>
+
+        <p>
+            Get the latest updates and news directly in your inbox.
+        </p>
+
+        <form>
+
+            <div class="input-box">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder=" "
+                    required
+                >
+
+                <label for="email">Email Address</label>
+            </div>
+
+            <button type="submit">
+                Subscribe
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+.field {
+    float: left;
+    width: 45%;
+    margin: 10px;
+}
+
+.field input,
+.field select {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+textarea {
+    width: 95%;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+

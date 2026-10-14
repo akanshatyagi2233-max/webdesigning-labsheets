@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.search-box {
+    text-align: center;
+    margin-top: 100px;
+}
+
+input {
+    width: 150px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+    /* Smooth transition */
+    transition: width 0.5s ease;
+}
+
+/* Expand when focused */
+input:focus {
+    width: 300px;
+    border-color: blue;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+

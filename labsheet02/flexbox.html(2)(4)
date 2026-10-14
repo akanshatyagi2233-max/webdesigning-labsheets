@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Layout</title>
+    </head>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+
+        }
+        .header{
+            background-color: lightblue;
+            padding:20px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            height:400px;
+        }
+        .sidebar{
+            background-color: lightgray;
+            width: 30%;
+            padding: 20px;
+
+        }
+        .content{
+            background-color: lightyellow;
+            width: 70%;
+            padding: 20px;
+        }
+        h2{
+            color: darkblue;
+        }
+        a{
+            display: block;
+            margin: 15px 0;
+        }
+    </style>
+</html>
+
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="content">
+            <h2>Welcome to My Website</h2>
+
+            <p>Flexbox is used to arrange elements.</p>
+        </div>
+    </div>
+</body>

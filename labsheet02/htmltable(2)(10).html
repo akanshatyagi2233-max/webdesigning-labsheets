@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            width: 700px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2455a4;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th {
+            background-color: #2455a4;
+            color: white;
+        }
+
+        /* Alternating row colors */
+        tr:nth-child(even) {
+            background-color: #eaf0ff;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        /* Hover effect */
+        tr:hover {
+            background-color: #cddcff;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Student Details</h2>
+
+        <table>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Marks</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>MCA</td>
+                <td>85</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Priya</td>
+                <td>MCA</td>
+                <td>91</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Aman</td>
+                <td>MCA</td>
+                <td>78</td>
+            </tr>
+
+            <tr>
+                <td>104</td>
+                <td>Neha</td>
+                <td>MCA</td>
+                <td>88</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
+

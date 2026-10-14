@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        .form-box {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        input, textarea {
+            width: 300px;
+            padding: 8px;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+
+    <div class="form-box">
+
+        <form>
+
+            <label>Name:</label><br>
+            <input type="text" name="name"><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br>
+
+            <label>Message:</label><br>
+            <textarea name="message"></textarea><br>
+
+            <!-- Inline CSS -->
+            <input
+                type="submit"
+                value="Submit"
+                style="background-color: green; color: white; width: 120px;"
+            >
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+
